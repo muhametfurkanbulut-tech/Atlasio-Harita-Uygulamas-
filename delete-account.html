@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hesap ve Veri Silme Talebi | Atlasio</title>
+  <meta name="description" content="Atlasio uygulamasındaki hesabınızı ve tüm kişisel verilerinizi kalıcı olarak silme talimatları ve talep formu.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/logo.png" alt="Atlasio Logo" class="brand-logo">
+        <span class="brand-text">Atlasio</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="privacy.html">Gizlilik Politikası</a></li>
+        <li><a href="terms.html">Kullanım Koşulları</a></li>
+        <li><a href="index.html#indir" class="nav-cta">Uygulamaya Dön</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="legal-wrapper">
+    <div class="container">
+      <article class="legal-card">
+        <h1>Hesap ve Veri Silme Talebi</h1>
+        <div class="legal-updated">Google Play Veri Güvenliği Politikası Uyumlu • Son Güncelleme: 11 Kasım 2026</div>
+
+        <div class="legal-content">
+          <p>
+            Google Play Geliştirici Politikaları ve KVKK/GDPR "Unutulma Hakkı" uyarınca; <strong>Atlasio: Türkiye Coğrafya & Harita Sınavı</strong> uygulamasındaki hesabınızı ve hesabınızla ilişkili tüm bulut verilerinizi dilediğiniz an kalıcı olarak sildirebilirsiniz.
+          </p>
+
+          <div class="legal-highlight">
+            <strong>Kalıcı İşlem Uyarısı:</strong> Hesabınız silindiğinde kazandığınız altınlar, açtığınız harita kategorileri, quiz puanlarınız ve istatistikleriniz kalıcı olarak silinir ve geri getirilemez.
+          </div>
+
+          <h2>1. Silinecek Veriler Nelerdir?</h2>
+          <ul>
+            <li>Google Kimlik Bilgisi ve E-posta adresi eşleşmesi,</li>
+            <li>Firebase Cloud Firestore üzerindeki kullanıcı profiliniz ve ilerleme kayıtlarınız,</li>
+            <li>Doğru/yanlış soru istatistikleri ve deneme sınavı sonuçlarınız,</li>
+            <li>Cihazınıza atanmış aktif oturum kayıtları.</li>
+          </ul>
+
+          <h2>2. Saklanan Veriler (Varsa)</h2>
+          <p>
+            Eğer uygulama içi satın alma yaptıysanız (Örn: Reklam Kaldırma), yasal muhasebe ve vergi mevzuatı gereğince Google Play tarafından tutulan anonim sipariş numaraları Google sunucularında yasal süre boyunca saklanabilir. Atlasio kendi sunucularında herhangi bir kredi kartı bilgisi tutmaz.
+          </p>
+
+          <h2>3. Hesabınızı Nasıl Silebilirsiniz?</h2>
+          <p>Hesabınızı ve verilerinizi silmek için 2 yöntem sunulmaktadır:</p>
+
+          <h3>Yöntem A: E-Posta ile Doğrudan Talep (En Hızlı)</h3>
+          <p>
+            Uygulamaya kayıt olduğunuz Google e-posta adresinizden <strong>atlasio2026@gmail.com</strong> adresine:
+          </p>
+          <div class="form-box" style="margin-bottom:24px;">
+            <strong>Konu:</strong> Hesap ve Veri Silme Talebi<br>
+            <strong>Mesaj:</strong> Atlasio uygulamasındaki hesabımın ve tüm verilerimin kalıcı olarak silinmesini talep ediyorum. (E-posta: ornek@gmail.com)
+          </div>
+          <p>
+            Talebiniz bize ulaştıktan sonra en geç <strong>48 saat içinde</strong> Firebase veritabanımızdaki kaydınız tamamen silinir ve tarafınıza onay e-postası iletilir.
+          </p>
+
+          <h3>Yöntem B: Hızlı Talep Formu</h3>
+          <div class="form-box" id="destek">
+            <form onsubmit="handleDeleteSubmit(event)">
+              <div class="form-group">
+                <label for="userEmail">Kayıtlı E-Posta Adresiniz (Google Hesabınız)*</label>
+                <input type="email" id="userEmail" class="form-control" placeholder="adiniz@gmail.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="reason">Silme Nedeni (İsteğe Bağlı)</label>
+                <textarea id="reason" class="form-control" rows="3" placeholder="Uygulamadan ayrılma nedeninizi belirtebilirsiniz..."></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary" style="width:100%; justify-content:center; cursor:pointer; border:none; margin-top:10px;">
+                Silme Talebini E-Posta ile Gönder
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-bottom">
+      <div>© 2026 Atlasio App. Tüm hakları saklıdır.</div>
+      <div>
+        <a href="index.html" style="color:#94a3b8; text-decoration:none; margin-right:16px;">Ana Sayfa</a>
+        <a href="privacy.html" style="color:#94a3b8; text-decoration:none; margin-right:16px;">Gizlilik Politikası</a>
+        <a href="terms.html" style="color:#94a3b8; text-decoration:none;">Kullanım Şartları</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function handleDeleteSubmit(e) {
+      e.preventDefault();
+      const email = document.getElementById('userEmail').value;
+      const reason = document.getElementById('reason').value;
+      const subject = encodeURIComponent("Hesap ve Veri Silme Talebi - " + email);
+      const body = encodeURIComponent(
+        "Merhaba Atlasio Destek Ekibi,\n\n" +
+        "Uygulamanızdaki hesabımın ve tüm bulut verilerimin silinmesini talep ediyorum.\n\n" +
+        "Kayıtlı E-posta: " + email + "\n" +
+        "Neden: " + (reason || "Belirtilmedi") + "\n\n" +
+        "Gereğinin yapılmasını rica ederim."
+      );
+      window.location.href = "mailto:atlasio2026@gmail.com?subject=" + subject + "&body=" + body;
+    }
+  </script>
+
+</body>
+</html>

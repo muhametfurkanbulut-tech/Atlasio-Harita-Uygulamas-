@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atlasio: Türkiye Coğrafya & Harita Sınavı | Resmi Web Sitesi</title>
+  <meta name="description" content="KPSS, YKS ve ÖSYM sınavlarına coğrafyayı ezberlemeden, interaktif Türkiye ve Dünya haritası üzerinde görerek hazırlanın. Soru bankası, bilgi kartları ve testler.">
+  <meta name="keywords" content="Atlasio, KPSS Coğrafya, Türkiye Haritası, Harita Quiz, YKS Coğrafya, Coğrafya Soru Bankası, ÖSYM Harita, Fiziki Coğrafya">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient Glow Effects -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/logo.png" alt="Atlasio Logo" class="brand-logo">
+        <span class="brand-text">Atlasio</span>
+        <span class="brand-badge">Eğitim</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#ozellikler">Özellikler</a></li>
+        <li><a href="#galeri">Ekranlar</a></li>
+        <li><a href="#sinavlar">Sınavlar</a></li>
+        <li><a href="#sss">Sıkça Sorulanlar</a></li>
+        <li><a href="privacy.html">Gizlilik Politikası</a></li>
+        <li><a href="terms.html">Kullanım Şartları</a></li>
+        <li><a href="#indir" class="nav-cta">Uygulamayı İndir</a></li>
+      </ul>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menü">☰</button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Drawer -->
+  <div id="mobileMenu" style="display:none; padding: 20px; background: #0f131d; border-bottom: 1px solid rgba(255,255,255,0.1);">
+    <div style="display:flex; flex-direction:column; gap:16px;">
+      <a href="#ozellikler" style="color:#fff; text-decoration:none;">Özellikler</a>
+      <a href="#galeri" style="color:#fff; text-decoration:none;">Ekranlar</a>
+      <a href="#sinavlar" style="color:#fff; text-decoration:none;">Sınavlar</a>
+      <a href="#sss" style="color:#fff; text-decoration:none;">Sıkça Sorulanlar</a>
+      <a href="privacy.html" style="color:#fff; text-decoration:none;">Gizlilik Politikası</a>
+      <a href="terms.html" style="color:#fff; text-decoration:none;">Kullanım Şartları</a>
+      <a href="delete-account.html" style="color:#fff; text-decoration:none;">Hesap & Veri Silme</a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container">
+      <div class="hero-pill">
+        <span class="dot"></span>
+        <span>Google Play Store'da Yayında • Sürüm 1.14</span>
+      </div>
+
+      <h1 class="hero-title">
+        Coğrafyayı Ezberlemeyin,<br>
+        <span class="gradient">Haritada Görerek Öğrenin</span>
+      </h1>
+
+      <p class="hero-desc">
+        Atlasio; KPSS, YKS, TYT, AYT ve ÖSYM sınavlarına hazırlananlar için tasarlanmış interaktif Türkiye ve Dünya haritası, soru bankası ve akıllı tekrar platformudur.
+      </p>
+
+      <div class="hero-actions" id="indir">
+        <a href="https://play.google.com/store/apps/details?id=com.atlasio.app" target="_blank" rel="noopener noreferrer" class="btn-primary">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M3.609 1.814L13.793 12 3.61 22.186a2.001 2.001 0 0 1-.61-.926V2.74c0-.348.113-.674.31-.926l.299-.001zm11.24 11.242l2.457-2.457-11.7-6.666 9.243 9.123zm2.457-3.613l2.842 1.62c.983.56 1.48 1.482 1.48 2.437s-.497 1.877-1.48 2.437l-2.842 1.62-2.148-2.148 2.148-2.366zm-4.605 4.606l-9.243 9.123 11.7-6.666-2.457-2.457z"/>
+          </svg>
+          Google Play'den İndirin
+        </a>
+
+        <a href="#ozellikler" class="btn-secondary">
+          Özellikleri Keşfedin ↓
+        </a>
+      </div>
+
+      <!-- App Showcase Tablet Mockup -->
+      <div class="hero-showcase">
+        <div class="showcase-glow"></div>
+        <div class="floating-badge badge-left">
+          <span>🌾</span>
+          <span>TÜİK Tarım & Maden Haritaları</span>
+        </div>
+        <div class="floating-badge badge-right">
+          <span>🧠</span>
+          <span>ÖSYM Formatında Harita Testi</span>
+        </div>
+        <div class="device-frame">
+          <div class="device-screen">
+            <img src="assets/screen_thematic_wheat.jpg" alt="Atlasio İnteraktif Türkiye Buğday Üretimi ve İstatistik Haritası">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Exam Highlights Banner -->
+  <section class="banner-section" id="sinavlar">
+    <div class="container">
+      <div class="exam-banner">
+        <div class="banner-content">
+          <h3>ÖSYM Formatında Tam Uyumlu Soru Hazırlığı</h3>
+          <p>
+            Müfredata uygun güncel coğrafya verileri, çıkmış soru benzeri testler, madenler, sanayi, tarım ve jeolojik oluşumlar tek bir dokunuşla elinizin altında.
+          </p>
+          <div class="badges-row">
+            <span class="exam-badge">KPSS Lisans</span>
+            <span class="exam-badge">KPSS Ön Lisans</span>
+            <span class="exam-badge">KPSS Ortaöğretim</span>
+            <span class="exam-badge">YKS (TYT - AYT)</span>
+            <span class="exam-badge">Genel Kültür</span>
+          </div>
+        </div>
+        <div style="text-align:center;">
+          <img src="assets/logo.png" alt="Atlasio Logo" style="width:110px; height:110px; border-radius:24px; box-shadow:0 10px 30px rgba(0,0,0,0.5); border:1px solid rgba(255,255,255,0.2);">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Grid -->
+  <section class="features-section" id="ozellikler">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-tag">Neler Sunuyoruz?</div>
+        <h2 class="section-title">Coğrafyada Başarıya Ulaştıran Araçlar</h2>
+        <p class="section-subtitle">Geleneksel sıkıcı ezber yöntemlerini unutun. Görsel zekayı harekete geçiren interaktif eğitim deneyimi.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon-wrap">🗺️</div>
+          <h3 class="feature-title">İnteraktif Türkiye Haritası</h3>
+          <p class="feature-text">Dağlar, ovalar, platolar, akarsular, göller ve fay hatlarını Türkiye haritası üzerinde canlı olarak keşfedin ve öğrenin.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrap">🎯</div>
+          <h3 class="feature-title">ÖSYM Soru Bankası</h3>
+          <p class="feature-text">Geçmiş yılların sınav mantığına göre hazırlanmış, konuya özel soru setleri ve detaylı açıklamalı çözümler.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrap">🃏</div>
+          <h3 class="feature-title">Hızlı Tekrar Bilgi Kartları</h3>
+          <p class="feature-text">Otobüste, molada veya yatmadan önce hızlıca göz atabileceğiniz püf noktalardan oluşan flashcard sistemi.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrap">🎡</div>
+          <h3 class="feature-title">Günlük Çark ve Görevler</h3>
+          <p class="feature-text">Her gün uygulamaya girerek çarkı çevirin, altınlarınızı toplayın, kilitli özel coğrafya modüllerini kolayca açın.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrap">🛡️</div>
+          <h3 class="feature-title">Aile ve Öğrenci Dostu</h3>
+          <p class="feature-text">Uygulamamızda +18, bahis ve uygunsuz reklamlar sistem düzeyinde tamamen engellenmiştir. Güvenli çalışma ortamı.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrap">⚡</div>
+          <h3 class="feature-title">Işık Hızında ve Akıcı</h3>
+          <p class="feature-text">Kasmayan, modern obsidian karanlık mod arayüzü ve düşük pil tüketimiyle saatlerce yorulmadan çalışın.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- App Screenshots Gallery Section -->
+  <section class="gallery-section" id="galeri">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-tag">Uygulama İçi Canlı Ekranlar</div>
+        <h2 class="section-title">Atlasio ile Coğrafyayı Keşfedin</h2>
+        <p class="section-subtitle">Karanlık obsidian modunda tasarlanmış interaktif haritalar, sınav modülleri ve akıllı tekrar sistemleri.</p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="gallery-tabs">
+        <button class="tab-btn active" data-filter="all">Tüm Ekranlar (9)</button>
+        <button class="tab-btn" data-filter="maps">Tematik Haritalar</button>
+        <button class="tab-btn" data-filter="quiz">Soru Bankası & Test</button>
+        <button class="tab-btn" data-filter="world">Dünya Coğrafyası</button>
+        <button class="tab-btn" data-filter="study">Bilgi Kartları</button>
+        <button class="tab-btn" data-filter="settings">Ayarlar & Menü</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- 1. Thematic Wheat -->
+        <div class="gallery-card" data-category="maps">
+          <div class="gallery-img-box">
+            <img src="assets/screen_thematic_wheat.jpg" alt="Türkiye Buğday Üretimi Haritası" loading="lazy">
+          </div>
+          <div class="gallery-info">
+            <div class="gallery-tag">TÜİK Verileri</div>
+            <h4 class="gallery-title">Türkiye Buğday Üretimi</h4>
+            <p class="gallery-desc">İl bazında üretim miktarları, oransal sıralama ve tarımsal dağılım haritası.</p>
+          </div>
+        </div>
+
+        <!-- 2. Quiz Mountains -->
+        <div class="gallery-card" data-category="quiz">
+          <div class="gallery-img-box">
+            <img src="assets/screen_quiz_mountains.jpg" alt="Emir Dağı Nerede Harita Testi" loading="lazy">
+          </div>
+          <div class="gallery-info">
+            <div class="gallery-tag">Sınav Modu</div>
+            <h4 class="gallery-title">İnteraktif Dağlar Testi</h4>
+            <p class="gallery-desc">"Emir Dağı nerede?" gibi sorularla harita üzerinden anında işaretleyerek pratik yapın.</p>
+          </div>
+        </div>
+
+        <!-- 3. Thematic Cotton -->
+        <div class="gallery-card" data-category="maps">
+          <div class="gallery-img-box">
+            <img src="assets/screen_thematic_cotton.jpg" alt="Pamuk Üretimi Haritası" loading="lazy">
+          </div>
+          <div class="gallery-info">
+            <div class="gallery-tag">Ekonomik Coğrafya</div>
+            <h4 class="gallery-title">Pamuk Üretim Bölgeleri</h4>
+            <p class="gallery-desc">Şanlıurfa, Diyarbakır, Aydın ve Hatay gibi zirve pamuk merkezleri tek bakışta.</p>
+          </div>
+        </div>
+
+        <!-- 4. World Straits -->
+        <div class="gallery-card" data-category="world">
+          <div class="gallery-img-box">
+            <img src="assets/screen_world_straits.jpg" alt="Dünya Haritası ve Önemli Boğazlar" loading="lazy">
+          </div>
+          <div class="gallery-info">
+            <div class="gallery-tag">Dünya Coğrafyası</div>
+            <h4 class="gallery-title">Önemli Boğazlar & Kanallar</h4>
+            <p class="gallery-desc">Cebelitarık, Malakka, Hürmüz ve Süveyş gibi stratejik su yolları harita üzerinde.</p>
+          </div>
+        </div>
+
+        <!-- 5. Flashcards Swipe -->
+        <div class="gallery-card" data-category="study">
+          <div class="gallery-img-box">
+            <img src="assets/screen_flashcards_swipe.jpg" alt="Bilgi Kartları Sola/Sağa Kaydırma" loading="lazy">
+          </div>
+          <div class="gallery-info">
+            <div class="gallery-tag">Görsel Hafıza</div>
+            <h4 class="gallery-title">Bilgi Kartları (Flashcards)</h4>
+            <p class="gallery-desc">Sola kaydırarak tekrar et, sağa kaydırarak öğrendim de. Akıllı aralıklı tekrar sistemi.</p>
+          </div>
+        </div>
+
+        <!-- 6. Home Dashboard -->
+        <div class="gallery-card" data-category="settings">
+          <div class="gallery-img-box">
+            <img src="assets/screen_home_dashboard.jpg" alt="Atlasio Ana Kontrol Paneli" loading="lazy">
+          </div>
+          <div class="gallery-info">
+            <div class="gallery-tag">Ana Kontrol Paneli</div>
+            <h4 class="gallery-title">Atlasio Dashboard</h4>
+            <p class="gallery-desc">Mevcut bakiye, seri gün takibi, hızlı öğrenme araçları ve harita modülleri.</p>
+          </div>
+        </div>
+
+        <!-- 7. Categories -->
+        <div class="gallery-card" data-category="maps">
+          <div class="gallery-img-box">
+            <img src="assets/screen_categories.jpg" alt="Harita Kategorileri ve Sınırlar" loading="lazy">
+          </div>
+          <div class="gallery-info">
+            <div class="gallery-tag">Kategoriler</div>
+            <h4 class="gallery-title">Türkiye & Dünya Modülleri</h4>
+            <p class="gallery-desc">81 il, sınır kapıları, büyükşehirler ve kıtalar arası zengin öğrenme menüsü.</p>
+          </div>
+        </div>
+
+        <!-- 8. Settings -->
+        <div class="gallery-card" data-category="settings">
+          <div class="gallery-img-box">
+            <img src="assets/screen_settings.jpg" alt="Görünüm ve Tema Ayarları" loading="lazy">
+          </div>
+          <div class="gallery-info">
+            <div class="gallery-tag">Kişiselleştirme</div>
+            <h4 class="gallery-title">Karanlık & AMOLED Teması</h4>
+            <p class="gallery-desc">Ses, titreşim, animasyon azaltma ve harita etiket boyutu kişiselleştirmeleri.</p>
+          </div>
+        </div>
+
+        <!-- 9. Favorites -->
+        <div class="gallery-card" data-category="study">
+          <div class="gallery-img-box">
+            <img src="assets/screen_favorites.jpg" alt="Favori Kartlar ve Zorlanılan Konular" loading="lazy">
+          </div>
+          <div class="gallery-info">
+            <div class="gallery-tag">Akıllı Tekrar</div>
+            <h4 class="gallery-title">Favoriler & Hatalı Sorular</h4>
+            <p class="gallery-desc">Zorlandığınız noktaları kalp simgesiyle favorilere ekleyin, sınava girmeden önce tekrarlayın.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="features-section" id="sss" style="padding-top: 0;">
+    <div class="container" style="max-width: 800px;">
+      <div class="section-head">
+        <div class="section-tag">Merak Edilenler</div>
+        <h2 class="section-title">Sıkça Sorulan Sorular</h2>
+      </div>
+
+      <div style="display:flex; flex-direction:column; gap:16px;">
+        <div class="feature-card" style="padding: 24px;">
+          <h4 style="font-size:1.15rem; margin-bottom:8px;">Atlasio uygulaması ücretsiz mi?</h4>
+          <p class="feature-text">Evet! Uygulama ücretsiz olarak indirilebilir ve tüm temel harita modülleri, testler ve bilgi kartları ücretsiz kullanılabilir. İsteğe bağlı olarak tek seferlik ödemeyle reklamları tamamen kaldırma seçeneği sunulmaktadır.</p>
+        </div>
+
+        <div class="feature-card" style="padding: 24px;">
+          <h4 style="font-size:1.15rem; margin-bottom:8px;">Hangi sınavlar için uygundur?</h4>
+          <p class="feature-text">Başta KPSS (Lisans, Ön Lisans, Ortaöğretim) olmak üzere, YKS (TYT-AYT Coğrafya), MSÜ, EKPSS ve okul sınavları için birebir uygundur.</p>
+        </div>
+
+        <div class="feature-card" style="padding: 24px;">
+          <h4 style="font-size:1.15rem; margin-bottom:8px;">Kişisel verilerim güvende mi?</h4>
+          <p class="feature-text">Kesinlikle. Uygulamamız yalnızca oyun ilerlemenizi ve puanlarınızı güvenle saklamak için Google Firebase altyapısını kullanır. Kişisel verileriniz asla 3. şahıslara satılmaz. Detaylar için Gizlilik Politikamızı inceleyebilirsiniz.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div style="display:flex; align-items:center; gap:12px;">
+            <img src="assets/logo.png" alt="Atlasio" style="width:36px; height:36px; border-radius:10px;">
+            <span style="font-size:1.25rem; font-weight:700; color:#fff;">Atlasio</span>
+          </div>
+          <p>
+            Türkiye ve Dünya coğrafyasını harita üzerinde görselleştirerek sınavlarda başarıya ulaştıran eğitim uygulaması.
+          </p>
+        </div>
+
+        <div class="footer-nav">
+          <div class="footer-nav-col">
+            <h4>Yasal Belgeler</h4>
+            <ul>
+              <li><a href="privacy.html">Gizlilik Politikası</a></li>
+              <li><a href="terms.html">Kullanım Koşulları</a></li>
+              <li><a href="delete-account.html">Hesap & Veri Silme</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-nav-col">
+            <h4>İletişim & Destek</h4>
+            <ul>
+              <li><a href="mailto:atlasio2026@gmail.com">atlasio2026@gmail.com</a></li>
+              <li><a href="delete-account.html#destek">Geri Bildirim Bildir</a></li>
+              <li><a href="https://play.google.com/store/apps/details?id=com.atlasio.app" target="_blank" rel="noopener">Google Play Sayfası</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 Atlasio App. Tüm hakları saklıdır.
+        </div>
+        <div style="font-size:0.85rem; color:#64748b;">
+          Google Play ve Google Play logosu, Google LLC'nin ticari markalarıdır.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('mobileToggle');
+    const menu = document.getElementById('mobileMenu');
+    if (toggle && menu) {
+      toggle.addEventListener('click', () => {
+        menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+      });
+    }
+
+    // Gallery Filter Tabs
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const cards = document.querySelectorAll('.gallery-card');
+
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tabBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.getAttribute('data-filter');
+
+        cards.forEach(card => {
+          if (filter === 'all' || card.getAttribute('data-category') === filter) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
